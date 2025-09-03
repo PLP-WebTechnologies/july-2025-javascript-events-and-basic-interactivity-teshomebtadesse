@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+body.dark-theme{
+    background: #222;
+    color:white
+}
+h1{
+    color: #0c0c13;
+    font-size: larger;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+#toggleGrades, #submitbtn{
+  margin: 5px 0;
+  padding: 8px;
+  width: 50%;
+  background-color: rgb(159, 166, 166);
+}
+
+
+input{
+  margin: 5px 0;
+  padding: 8px;
+  width: 50%;
+}
+
+#dropzone{
+    width:200px;
+    height:200px;
+    line-height: 200px;
+    text-align: center;
+    border:2px dashed #000000;
+}
+
+.background-toggle {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#bgbutton {
+  padding: 8px 8px;
+  background-color: #595c5a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

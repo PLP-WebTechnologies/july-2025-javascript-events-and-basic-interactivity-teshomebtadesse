@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Information Management System</title>
+  <link rel="stylesheet" href="styles\style.css">
+</head>
+<body>
+    <!-- Add a button that changes background color -->
+     <div class="background-toggle">
+        <button id="bgbutton" onclick="toggleTheme()">Dark background</button>
+     </div>
+   
+
+  <h1>Student Information Management System</h1>
+
+  <!-- Search and Filter -->
+  <input type="text" id="searchInput" placeholder="Search student by name...">
+
+  <!-- Student Table -->
+  <table id="studentTable">
+    <thead>
+      <tr><th>Name</th><th>Student_ID</th><th>Department</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Abebe Kebede</td><td>STU-2025-0001</td><td>Environmental Science</td></tr>
+      <tr><td>Selam Tesfaye</td><td>STU-2025-0002</td><td>Computer Science</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Toggle Section -->
+  <button id="toggleGrades">Show/Hide Grades</button>
+  <div id="grades" class="hidden">
+    <p>Grades for selected student will appear here.</p>
+  </div>
+
+  <!-- Form Section -->
+  <h2>Register New Student</h2>
+  <form id="studentForm">
+    <!--  drag and drop box to add student photo -->
+    <div id="dropzone">Drop student photo here</div> 
+
+    <!-- alternative file input to add student photo -->
+     <label for="text">Or upload photo</label>
+    <input type="file" id="photoInput" accept="image/*">
+
+    <input type="text" id="fullName" placeholder="Full Name">
+    <input type="email" id="email" placeholder="Email">
+    <input type="text" id="studentId" placeholder="Student ID (e.g., STU-2025-XXXX)">
+    <input type="text" id="department" placeholder="Department">
+    <input type="password" id="password" placeholder="Password">
+    <button id="submitbtn" type="submit">Submit</button>
+  </form>
+
+  <script src="scripts\script.js"></script>
+</body>
+</html>
